@@ -12,7 +12,7 @@ docker dev testbed for kafka with php (with a dev kafka mini cluster)
   
 do __cd kafka && make consumer__ to see any messages posted to kafka.
 
-now open your browser pointing to <http://localhost/kafka.php> to send a simple test kafka messsage from php.
+now open your browser pointing to <http://localhost:6080/kafka.php> to send a simple test kafka messsage from php.
 
 see [kafka/README.md](https://github.com/littlemole/kafkaphp/blob/master/kafka) for the kafka mini cluster.
 
