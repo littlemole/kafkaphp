@@ -37,4 +37,4 @@ $kafka->produce("test", "helo from php");
 
 - phpkafka extension is easiest loaded with full path in php.ini extension=/full/path/to/kafka.so
 
-- for the multiple docker container setup it is necessary for the kafka broker to have its __advertised.host.name = $HOST_IP __ set so that the correct ip is announced to zookeeper.
+- for the multiple docker container setup it is necessary for the kafka broker to have its **advertised.host.name = $HOST_IP ** set so that the correct ip is announced to zookeeper.
