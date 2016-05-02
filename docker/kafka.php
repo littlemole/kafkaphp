@@ -1,13 +1,8 @@
 <?php
 
-//$a = get_loaded_extensions (false );
-//var_dump($a);
+$brokerlist = getenv("HOST_IP").":9092";
 
-//phpinfo();
-
-$server = getenv("HOST_IP").":9092";
-
-$kafka = new Kafka($server);
+$kafka = new Kafka($brokerlist);
 $kafka->produce("test", "helo from php");        
 ?>
 
