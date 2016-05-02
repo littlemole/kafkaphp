@@ -10,9 +10,11 @@ docker dev testbed for kafka with php (with a dev kafka mini cluster)
 - **make demo**
   runs the kafka cluster form kafka subfolder, creates topic 'test' and starts the phpkafka container on port 80
   
-do __cd kafka && make consumer__ to see any messages posted to kafka
+do __cd kafka && make consumer__ to see any messages posted to kafka.
 
-now open your browser pointing to <http://localhost/kafka.php> to send a simple test kafka messsage from php
+now open your browser pointing to <http://localhost/kafka.php> to send a simple test kafka messsage from php.
+
+see [kafka/README.md](https://github.com/littlemole/kafkaphp/blob/master/kafka/README.md) for the kafka mini cluster.
 
 # kafkaphp, explained
 
