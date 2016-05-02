@@ -29,10 +29,4 @@
 
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
 
-	Alias /session-service/ /opt/session-service/public/
-
-	<Directory /opt/session-service/public/>
-       		AllowOverride All
-		Require all granted
-   	</Directory>
 </VirtualHost>
