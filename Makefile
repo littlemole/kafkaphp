@@ -15,7 +15,7 @@ image: clean
 	sudo docker build -t $(TAG) .
 	
 run: stop image
-	sudo docker run --name $(IMG) -d -p 80:80 -e HOST_IP=$(HOST_IP) $(TAG)
+	sudo docker run --name $(IMG) -d -p 6080:80 -e HOST_IP=$(HOST_IP) $(TAG)
                                         
 bash:                                   
 	sudo docker exec -ti $(IMG) bash
