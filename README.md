@@ -16,7 +16,17 @@ open your browser pointing to http://localhost:80 to send a simple test kafka me
 
 # kafkaphp, explained
 
-connecting to kafka from php is based on <https://github.com/EVODelavega/phpkafka>, which in trun relies on
+connecting to kafka from php is based on <https://github.com/EVODelavega/phpkafka>, which in turn relies on
 ([librdkafka](https://github.com/edenhill/librdkafka/)).
 
 for the docker image, after installing some base dependencies and pushing the whole thing to php 5.6 both librdkafka as well as the phpkafka php extension are build from source.
+
+now you can do:
+
+```php
+<?php
+$brokerlist = "<broker_ip>:9092";
+$kafka = new Kafka($brokerlist);
+$kafka->produce("test", "helo from php");
+?>
+```
