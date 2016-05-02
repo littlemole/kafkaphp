@@ -7,7 +7,7 @@ docker dev testbed for kafka with php (with a dev kafka mini cluster)
 - **make run**
   runs the phpkafka image
   
-- **demo**
+- **make demo**
   runs the kafka cluster form kafka subfolder, creates topic 'test' and starts the phpkafka container on port 80
   
 do __cd kafka && make consumer__ to see any messages posted to kafka
